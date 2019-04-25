@@ -1,0 +1,29 @@
+export default class Business {
+      movie_name: String;
+      movie_yor: String;
+      movie_plot: String;
+      producer_name: String;
+      producer_sex: String;
+      producer_dob: String;
+      producer_bio: String;
+      director_name: String;
+      director_sex: String;
+      director_dob: String;
+      director_bio: String;
+      actor1_name: String;
+      actor1_sex: String;
+      actor1_dob: String;
+      actor1_bio: String;
+      actor2_name: String;
+      actor2_sex: String;
+      actor2_dob: String;
+      actor2_bio: String;
+      actor3_name: String;
+      actor3_sex: String;
+      actor3_dob: String;
+      actor3_bio: String;
+      actor4_name: String;
+      actor4_sex: String;
+      actor4_dob: String;
+      actor4_bio: String;
+}

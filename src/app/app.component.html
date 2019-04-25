@@ -1,0 +1,24 @@
+<ng2-slim-loading-bar color="blue"></ng2-slim-loading-bar>
+<link rel="icon" type="image/x-icon" href="./assets/icon.png">
+<h2 style="background-color:DodgerBlue; color:white;">International Movie Review</h2>
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="business" class="nav-link" routerLinkActive="active">
+          Movie Dashboard
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="business/add" class="nav-link" routerLinkActive="active">
+          Add Movie
+        </a>
+      </li> 
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+

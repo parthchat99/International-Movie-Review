@@ -1,0 +1,235 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+<!-- Movie Detail -->
+<h1> Movie Details </h1>
+      <div class="form-group">
+        <label class="col-md-4">Movie Name</label>
+        <input type="text" class="form-control" formControlName="movie_name" #movie_name/>
+      </div>
+      <div *ngIf="angForm.controls['movie_name'].invalid && (angForm.controls['movie_name'].dirty || angForm.controls['movie_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['movie_name'].errors.required">
+          Movie name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Movie Date of Release </label>
+        <input type="text" class="form-control" formControlName="movie_yor" #movie_yor />
+      </div>
+      <div *ngIf="angForm.controls['movie_yor'].invalid && (angForm.controls['movie_yor'].dirty || angForm.controls['movie_yor'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['movie_yor'].errors.required">
+          Date of release of movie is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Movie Plot</label>
+        <input type="text" class="form-control" formControlName="movie_plot" #movie_plot />
+      </div>
+      <div *ngIf="angForm.controls['movie_plot'].invalid && (angForm.controls['movie_plot'].dirty || angForm.controls['movie_plot'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['movie_plot'].errors.required">
+          Movie plot is required.
+        </div>
+      </div>
+
+<!-- Producer Details -->
+<h1> Producer Details </h1>
+      <div class="form-group">
+        <label class="col-md-4">Producer Name</label>
+        <input type="text" class="form-control" formControlName="producer_name" #producer_name/>
+      </div>
+      <div *ngIf="angForm.controls['producer_name'].invalid && (angForm.controls['producer_name'].dirty || angForm.controls['producer_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['producer_name'].errors.required">
+          Producer's name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Producer Sex</label>
+        <input type="text" class="form-control" formControlName="producer_sex" #producer_sex />
+      </div>
+      <div *ngIf="angForm.controls['producer_sex'].invalid && (angForm.controls['producer_sex'].dirty || angForm.controls['producer_sex'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['producer_sex'].errors.required">
+          Producer's sex is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Producer Date of Birth</label>
+        <input type="text" class="form-control" formControlName="producer_dob" #producer_dob />
+      </div>
+      <div *ngIf="angForm.controls['producer_dob'].invalid && (angForm.controls['producer_dob'].dirty || angForm.controls['producer_dob'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['producer_dob'].errors.required">
+          Producer's Date of Birth is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Producer Bio</label>
+        <input type="text" class="form-control" formControlName="producer_bio" #producer_bio />
+      </div>
+      <div *ngIf="angForm.controls['producer_bio'].invalid && (angForm.controls['producer_bio'].dirty || angForm.controls['producer_bio'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['producer_bio'].errors.required">
+          Producer's Bio is required.
+        </div>
+      </div>
+
+
+<!-- Director Details -->
+<h1> Director Details </h1>
+      <div class="form-group">
+        <label class="col-md-4">Director Name</label>
+        <input type="text" class="form-control" formControlName="director_name" #director_name/>
+      </div>
+      <div *ngIf="angForm.controls['director_name'].invalid && (angForm.controls['director_name'].dirty || angForm.controls['director_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['director_name'].errors.required">
+          Director's name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Director Sex</label>
+        <input type="text" class="form-control" formControlName="director_sex" #director_sex />
+      </div>
+      <div *ngIf="angForm.controls['director_sex'].invalid && (angForm.controls['director_sex'].dirty || angForm.controls['director_sex'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['director_sex'].errors.required">
+          Director's sex is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Director Date of Birth</label>
+        <input type="text" class="form-control" formControlName="director_dob" #director_dob />
+      </div>
+      <div *ngIf="angForm.controls['director_dob'].invalid && (angForm.controls['director_dob'].dirty || angForm.controls['director_dob'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['director_dob'].errors.required">
+          Director's Date of Birth is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Director Bio</label>
+        <input type="text" class="form-control" formControlName="director_bio" #director_bio />
+      </div>
+      <div *ngIf="angForm.controls['director_bio'].invalid && (angForm.controls['director_bio'].dirty || angForm.controls['director_bio'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['director_bio'].errors.required">
+          Director's Bio is required.
+        </div>
+      </div>
+
+<!-- First Actor Details -->
+<h1> First Actor Details </h1>
+      <div class="form-group">
+        <label class="col-md-4">Actor Name</label>
+        <input type="text" class="form-control" formControlName="actor1_name" #actor1_name/>
+      </div>
+      <div *ngIf="angForm.controls['actor1_name'].invalid && (angForm.controls['actor1_name'].dirty || angForm.controls['actor1_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor1_name'].errors.required">
+          Actor's name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Sex</label>
+        <input type="text" class="form-control" formControlName="actor1_sex" #actor1_sex />
+      </div>
+      <div *ngIf="angForm.controls['actor1_sex'].invalid && (angForm.controls['actor1_sex'].dirty || angForm.controls['actor1_sex'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor1_sex'].errors.required">
+          Actor's sex is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Date of Birth</label>
+        <input type="text" class="form-control" formControlName="actor1_dob" #actor1_dob />
+      </div>
+      <div *ngIf="angForm.controls['actor1_dob'].invalid && (angForm.controls['actor1_dob'].dirty || angForm.controls['actor1_dob'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor1_dob'].errors.required">
+          Actor's Date of Birth is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Bio</label>
+        <input type="text" class="form-control" formControlName="actor1_bio" #actor1_bio />
+      </div>
+      <div *ngIf="angForm.controls['actor1_bio'].invalid && (angForm.controls['actor1_bio'].dirty || angForm.controls['actor1_bio'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor1_bio'].errors.required">
+          Actor's Bio is required.
+        </div>
+      </div>
+
+<!-- Second Actor Details -->
+<h1> Second Actor Details </h1>
+      <div class="form-group">
+        <label class="col-md-4">Actor Name</label>
+        <input type="text" class="form-control" formControlName="actor2_name" #actor2_name/>
+      </div>
+      <div *ngIf="angForm.controls['actor2_name'].invalid && (angForm.controls['actor2_name'].dirty || angForm.controls['actor2_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor2_name'].errors.required">
+          Actor's name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Sex</label>
+        <input type="text" class="form-control" formControlName="actor2_sex" #actor2_sex />
+      </div>
+      <div *ngIf="angForm.controls['actor2_sex'].invalid && (angForm.controls['actor2_sex'].dirty || angForm.controls['actor2_sex'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor2_sex'].errors.required">
+          Actor's sex is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Date of Birth</label>
+        <input type="text" class="form-control" formControlName="actor2_dob" #actor2_dob />
+      </div>
+      <div *ngIf="angForm.controls['actor2_dob'].invalid && (angForm.controls['actor2_dob'].dirty || angForm.controls['actor2_dob'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor2_dob'].errors.required">
+          Actor's Date of Birth is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Bio</label>
+        <input type="text" class="form-control" formControlName="actor2_bio" #actor2_bio />
+      </div>
+      <div *ngIf="angForm.controls['actor2_bio'].invalid && (angForm.controls['actor2_bio'].dirty || angForm.controls['actor2_bio'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['actor2_bio'].errors.required">
+          Actor's Bio is required.
+        </div>
+      </div>
+
+<!-- Third Actor Details -->
+<h1> Third Actor Details </h1>
+      <div class="form-group">
+        <label class="col-md-4">Actor Name</label>
+        <input type="text" class="form-control" formControlName="actor3_name" #actor3_name/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Sex</label>
+        <input type="text" class="form-control" formControlName="actor3_sex" #actor3_sex />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Date of Birth</label>
+        <input type="text" class="form-control" formControlName="actor3_dob" #actor3_dob />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Bio</label>
+        <input type="text" class="form-control" formControlName="actor3_bio" #actor3_bio />
+      </div>
+
+<!-- Fourth Actor Details -->
+<h1> Fourth Actor Details </h1>
+      <div class="form-group">
+        <label class="col-md-4">Actor Name</label>
+        <input type="text" class="form-control" formControlName="actor4_name" #actor4_name/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Sex</label>
+        <input type="text" class="form-control" formControlName="actor4_sex" #actor4_sex />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Date of Birth</label>
+        <input type="text" class="form-control" formControlName="actor4_dob" #actor4_dob />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Actor Bio</label>
+        <input type="text" class="form-control" formControlName="actor4_bio" #actor4_bio />
+      </div>
+
+
+      <div class="form-group">
+        <button (click)="addBusiness(movie_name.value, movie_yor.value, movie_plot.value, producer_name.value, producer_sex.value, producer_dob.value, producer_bio.value, director_name.value, director_sex.value, director_dob.value, director_bio.value, actor1_name.value, actor1_sex.value, actor1_dob.value, actor1_bio.value, actor2_name.value, actor2_sex.value, actor2_dob.value, actor2_bio.value, actor3_name.value, actor3_sex.value, actor3_dob.value, actor3_bio.value, actor4_name.value, actor4_sex.value, actor4_dob.value, actor4_bio.value)" class="btn btn-primary">Add Movie</button>
+      </div>
+    </form>
+  </div>
+</div>
