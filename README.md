@@ -1,4 +1,4 @@
-IMR or International Movie Review is an app which is based on IMDB. It is build using Angular 7 as Frontend, Nodejs as Backend Language and MongoDB as Database. ExpressJS is used to build REST API. Using this app anyone can perform CRUD(Create, Read, Update, Delete) operations.
+IMR or International Movie Review is an application which is based on IMDB. It is build using Angular 7 as Frontend, Nodejs as Backend Language and MongoDB as Database. ExpressJS is used to build REST API. Using this app anyone can perform CRUD(Create, Read, Update, Delete) operations.
 
 To run, you just have MongoDB installed and running, and NodeJS installed and running.
 
